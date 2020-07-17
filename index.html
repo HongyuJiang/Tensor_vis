@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style/bootstrap-table.css">
+    <link rel="stylesheet" type="text/css" href="style/bootstrap-select.min.css">
+    <link rel="stylesheet" type="text/css" href="style/global_style.css">
+    <title>Title</title>
+</head>
+<body>
+
+<!-- Stack the columns on mobile by making one full-width and the other half-width -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="#">MuNeEye</a>
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Data <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#">VIZ <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item" style="position:absolute;right:30px">
+                <a class="nav-link" href="#">Copyright</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="row" style="height: 80px; margin-left: 0px">
+
+    <div style="background: yellowgreen;width:20px;height: 80%"></div>
+
+    <ul class="list-group mb-3" style="width: 300px;">
+        <li class="list-group-item d-flex justify-content-between lh-condensed bg-light" style="border-radius: 0px !important">
+            <div class="text-success">
+                <h6 class="my-0">Components Number</h6>
+                <small class="text-muted">Tensor Factoring Outcome</small>
+            </div>
+            <span class="text-muted" id="components_number">No Data</span>
+        </li>
+    </ul>
+
+
+    <ul class="list-group mb-3" style="width: 250px">
+        <li class="list-group-item d-flex justify-content-between lh-condensed">
+            <div>
+                <h6 class="my-0">Action's Type</h6>
+                <small class="text-muted">Layers Number</small>
+            </div>
+            <span class="text-muted" id="layer_number">No Data</span>
+        </li>
+    </ul>
+
+    <ul class="list-group mb-3" style="width: 280px">
+        <li class="list-group-item d-flex justify-content-between lh-condensed">
+            <div>
+                <h6 class="my-0">Nodes Number</h6>
+                <small class="text-muted">Nodes in Target Network</small>
+            </div>
+            <span class="text-muted" id="nodes_number">No Data</span>
+        </li>
+    </ul>
+
+
+    <ul class="list-group mb-3" style="width: 220px">
+        <li class="list-group-item d-flex justify-content-between lh-condensed">
+            <div>
+                <h6 class="my-0">Time Range</h6>
+                <small class="text-muted" id="time_range_detail">No Data</small>
+            </div>
+            <span class="text-muted" id="time_range">No Data</span>
+        </li>
+    </ul>
+
+    <ul class="list-group mb-3" style="width: 330px">
+        <li class="list-group-item d-flex justify-content-between lh-condensed">
+
+            <SPAN class="my-0" style="padding-top: 6px">Dataset</SPAN>
+
+            <select class="selectpicker" id="dataName">
+                <option>None</option>
+                <option>CDRs</option>
+                <option>Servers</option>
+                <option>Algeria</option>
+            </select>
+
+        </li>
+    </ul>
+
+</div>
+
+<div class="row">
+    <div class="col-6 col-md-3" id="network" style="height:550px"></div>
+    <div class="col-6 col-md-4" id="trendline" style="height:550px"></div>
+    <div class="col-6 col-md-2" id="matrix" style="height:580px"></div>
+    <div class="col-6 col-md-3" id="rank" style="height:550px"></div>
+</div>
+
+<!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+<div class="row">
+    <div class="col-6 col-md-12" id="gantt" style="height:500px"></div>
+</div>
+
+</body>
+<script src="libs/proper.js"></script>
+<script src="libs/jquery-1.9.1.min.js"></script>
+<script src="libs/bootstrap.min.js"></script>
+<script src="libs/d3.min.js"></script>
+<script src="libs/bootstrap-select.min.js"></script>
+
+<script src="models/gantt.js"></script>
+<script src="models/trendline.js"></script>
+<script src="models/network.js"></script>
+<script src="models/matrix.js"></script>>
+<script src="models/matrix2.js"></script>>
+<script src="models/rank.js"></script>>
+<script src="app.js"></script>
+</html>

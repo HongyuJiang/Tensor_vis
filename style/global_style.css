@@ -1,0 +1,34 @@
+.table {
+    font-size: 14px;
+}
+
+.table tr,.table td {
+    height: 10px;
+    text-align: center
+}
+
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th
+{
+    padding:5px;
+}
+
+.list-group-item{
+
+    border: 0px !important;
+}
+
+.tooltip {
+    position: absolute;
+    padding: 8px;
+    text-align: left;
+    font: 16px "Hiragino Sans GB", "华文细黑", "STHeiti", "微软雅黑", "Microsoft YaHei", SimHei, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    background: rgba(0, 0, 0, .87);
+    color: #fff;
+    border-left: 4px solid #007bff;
+    pointer-events: none;
+}
+
+.tooltip hr {
+    padding: 0;
+    margin: 8px 0;
+}
